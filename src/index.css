@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply font-poppins text-grayText;
+}
+
+.container {
+  @apply max-w-6xl w-full mx-auto;
+}
+
+.hero-section {
+  @apply px-6 pt-32 pb-48;
+}
+
+.section {
+  @apply px-6 mt-6 py-16;
+}
+
+.header {
+  @apply text-baseBlack font-semibold text-3xl pb-10;
+}
+
+.gradient-text {
+  @apply bg-clip-text text-transparent;
+  background-image: var(
+    --gradient-bg,
+    linear-gradient(180deg, #6f11b3, #9449cb)
+  );
+}
+
+.solid-button {
+  @apply text-baseWhiteBg py-3 px-8 rounded-md active:bg-baseColor/80;
+  background-image: linear-gradient(180deg, #9449cb, #6f11b3);
+}
+
+.outlined-button {
+  @apply border border-baseColor text-baseColor py-3 px-10 rounded-md 
+    hover:bg-baseColor hover:text-baseWhiteBg 
+    active:bg-baseColor/80 
+    transition-colors duration-300 ease-in-out;
+}
+
+.footerBg {
+  background-image: linear-gradient(180deg, #9449cb, #6f11b3);
+}
