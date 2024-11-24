@@ -13,7 +13,7 @@ function App() {
     <div className="flex flex-col min-h-screen">
       <ParticlesBg />
       <Navbar />
-      <main className="flex-grow pt-24 h-full">
+      <main className="flex-grow h-full">
         <Hero />
         <Projects id="projects" />
         <Skills id="skills" />

@@ -10,7 +10,7 @@ export const Hero = () => {
     const [ref5, inView5] = useRefInView();
 
     return (
-        <div className="container">
+        <div className="container mt-[5.5rem]">
             <div className=" flex flex-col gap-4 hero-section md:items-center lg:text-center lg:items-center ">
                 <motion.p
                     ref={ref1}
