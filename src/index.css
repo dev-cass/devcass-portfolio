@@ -15,7 +15,7 @@ body {
 }
 
 .hero-section {
-  @apply px-6 pt-44 pb-48 md:pt-48;
+  @apply px-6 pt-44 pb-48 md:pt-52;
 }
 
 .section {
