@@ -1,6 +1,6 @@
 import { motion, Variants } from "framer-motion";
-import { FaHtml5, FaCss3Alt, FaNodeJs, FaReact, FaFigma } from "react-icons/fa";
-import { SiJavascript, SiExpress, SiTailwindcss, SiCanva, SiAdobephotoshop } from "react-icons/si";
+import { FaHtml5, FaCss3Alt, FaNodeJs, FaReact, FaFigma, FaFileExcel } from "react-icons/fa";
+import { SiJavascript, SiExpress, SiTailwindcss, SiCanva, SiAdobephotoshop, SiMysql } from "react-icons/si";
 
 interface SkillsProps {
   id: string;
@@ -16,11 +16,13 @@ export const Skills: React.FC<SkillsProps> = () => {
     { tech: "NodeJS", icon: <FaNodeJs /> },
     { tech: "Express", icon: <SiExpress /> },
     { tech: "TailwindCSS", icon: <SiTailwindcss /> },
+    { tech: "MySQL", icon: <SiMysql /> },
+    { tech: "Excel", icon: <FaFileExcel /> },
     { tech: "Figma", icon: <FaFigma /> },
     { tech: "Canva", icon: <SiCanva /> },
     { tech: "Photoshop", icon: <SiAdobephotoshop /> },
   ];
-  
+
   const serviceList = [
     {
       service: "Web Development",
@@ -38,7 +40,7 @@ export const Skills: React.FC<SkillsProps> = () => {
       image: "./Web Design.png",
     },
   ];
-  
+
   const stackVariants: Variants = {
     hidden: { opacity: 0, y: 20 },
     visible: {
