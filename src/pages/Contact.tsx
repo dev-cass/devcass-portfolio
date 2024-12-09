@@ -12,7 +12,7 @@ export const Contact: React.FC<ContactProps> = () => {
 
   const socialList = [
     { social: "Github", icon: <FaGithub />, link: "https://github.com/dev-cass" },
-    { social: "LinkedIn", icon: <FaLinkedin />, link: "https://www.linkedin.com/in/luis-miguel-cruz-b95328255/" },
+    { social: "LinkedIn", icon: <FaLinkedin />, link: "https://www.linkedin.com/in/luismigueldrcruz/" },
     { social: "Instagram", icon: <FaInstagramSquare />, link: "https://www.instagram.com/_lmcruz/" },
   ];
 
