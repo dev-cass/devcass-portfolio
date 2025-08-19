@@ -1,6 +1,7 @@
 import { motion, Variants } from "framer-motion";
-import { FaHtml5, FaCss3Alt, FaNodeJs, FaReact, FaFigma, FaFileExcel } from "react-icons/fa";
-import { SiJavascript, SiExpress, SiTailwindcss, SiCanva, SiAdobephotoshop, SiMysql } from "react-icons/si";
+import { FaFileExcel } from "react-icons/fa";
+import { BsBarChartFill } from "react-icons/bs";
+import {SiMysql, SiTableau  } from "react-icons/si";
 
 interface SkillsProps {
   id: string;
@@ -9,6 +10,7 @@ interface SkillsProps {
 export const Skills: React.FC<SkillsProps> = () => {
 
   const stackList = [
+/*
     { tech: "HTML5", icon: <FaHtml5 /> },
     { tech: "CSS3", icon: <FaCss3Alt /> },
     { tech: "JavaScript", icon: <SiJavascript /> },
@@ -16,13 +18,19 @@ export const Skills: React.FC<SkillsProps> = () => {
     { tech: "NodeJS", icon: <FaNodeJs /> },
     { tech: "Express", icon: <SiExpress /> },
     { tech: "TailwindCSS", icon: <SiTailwindcss /> },
-    { tech: "MySQL", icon: <SiMysql /> },
-    { tech: "Excel", icon: <FaFileExcel /> },
     { tech: "Figma", icon: <FaFigma /> },
     { tech: "Canva", icon: <SiCanva /> },
     { tech: "Photoshop", icon: <SiAdobephotoshop /> },
+   */
+
+    { tech: "Excel", icon: <FaFileExcel /> },
+    { tech: "MySQL", icon: <SiMysql /> },
+    { tech: "Power BI", icon: <BsBarChartFill /> },
+    { tech: "Tableau", icon: <SiTableau /> },
+
   ];
 
+  /*
   const serviceList = [
     {
       service: "Web Development",
@@ -41,6 +49,8 @@ export const Skills: React.FC<SkillsProps> = () => {
     },
   ];
 
+  */
+
   const stackVariants: Variants = {
     hidden: { opacity: 0, y: 20 },
     visible: {
@@ -50,6 +60,17 @@ export const Skills: React.FC<SkillsProps> = () => {
     },
   };
 
+  const containerStackVariants: Variants = {
+    hidden: {},
+    visible: {
+      transition: {
+        staggerChildren: 0.3,
+      },
+    },
+  };
+
+
+  /*
   const serviceImageVariants: Variants = {
     hidden: { opacity: 0, y: 20 },
     visible: {
@@ -77,15 +98,6 @@ export const Skills: React.FC<SkillsProps> = () => {
     },
   };
 
-  const containerStackVariants: Variants = {
-    hidden: {},
-    visible: {
-      transition: {
-        staggerChildren: 0.3,
-      },
-    },
-  };
-
   const containerServiceVariants: Variants = {
     hidden: {},
     visible: {
@@ -95,10 +107,13 @@ export const Skills: React.FC<SkillsProps> = () => {
     },
   };
 
+  */
+
   return (
     <div id="skills" className="section z-10">
       <div className="container">
         <h1 className="header pb-5">Tech Stack</h1>
+
         <motion.div
           className="flex justify-center"
           initial="hidden"
@@ -120,6 +135,8 @@ export const Skills: React.FC<SkillsProps> = () => {
           </div>
         </motion.div>
 
+
+        {/*
         <motion.div
           className="pt-28 pb-5"
           initial="hidden"
@@ -163,6 +180,7 @@ export const Skills: React.FC<SkillsProps> = () => {
             </motion.div>
           ))}
         </motion.div>
+ */ }
       </div>
     </div>
   );
