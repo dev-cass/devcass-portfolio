@@ -28,11 +28,12 @@ export const Hero = () => {
                 <motion.p
                     ref={ref3}
                     {...enterAnimate(0.5, inView3)}
-                    className="max-w-2xl text-sm lg:text-base"
+                    className="max-w-3xl text-sm lg:text-base"
                 >
-                    I am a <span className="font-bold">Front-end Developer </span>
-                    based in the Philippines. I love designing and building websites and gradually exploring various
-                    of technologies to maximize my skills.
+                    I am a <span className="font-bold">Data Analyst </span>
+                    based in the Philippines, passionate about transforming raw data into clear, actionable insights. 
+                    With a strong foundation in Computer Science, I enjoy solving problems, finding patterns, 
+                    and creating data-driven solutions that make an impact.
                 </motion.p>
                 <div className="flex pt-5 gap-5">
                     <motion.a

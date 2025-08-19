@@ -59,14 +59,27 @@ export const About: React.FC<AboutProps> = () => {
             >
               Luis Miguel Cruz
             </motion.h2>
+
             <motion.p variants={textVariants}>
-              I am currently a 4th year Computer Science student at Our Lady of Fatima University.
-              I am a Front-end developer who's continuously learning and exploring various technologies to improve myself.
+              I recently graduated from Our Lady of Fatima University - Quezon City with a degree in Computer Science.
+              I’ve always been drawn to finding patterns and solving problems, which fuels my passion for working with data,
+              from <span className="font-bold">cleaning and organizing datasets to analyzing
+                and visualizing insights that support smarter decisions. </span>
             </motion.p>
+
             <motion.p variants={textVariants}>
-              I’m mostly drawn to anything that relates to design, which is why I love being a Frontend developer.
-              In every project, whether personal or school-related, I take responsibility for crafting the visuals and layout, ensuring everything feels cohesive and engaging.
+              I’ve built hands-on experience with SQL, Excel, and Visualization tools, using them to explore data,
+              and present findings in a clear and meaningful way. What drives me is the opportunity to <span className="font-bold">
+                turn the complex data into a clear actionable insights </span>that shows a story behind the data.
             </motion.p>
+
+            <motion.p variants={textVariants}>
+              For me, data is not just numbers, it can give you a narrative to solve real-world problems and
+              create opportunities. I'm on a journey of using my skills on practical projects where I can contribute
+              on data-driven decision-making.
+            </motion.p>
+
+
           </motion.div>
 
         </div>
